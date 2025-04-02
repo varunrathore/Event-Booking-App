@@ -52,3 +52,14 @@ To clear the application cache:
 php artisan cache:clear
 php artisan config:clear
 php artisan config:cache
+
+Authentication and Authorization:-
+
+Authentication:
+We would use Laravel Sanctum (or Laravel Passport for OAuth) to authenticate API users.
+Middleware to protect event management routes with via grouping api in sanctum
+Route::middleware('auth:sanctum')->group(function () {
+});
+We can create a route to register user out of this sanctum group.
+
+Authorization: Role-Based Access Control (RBAC)
