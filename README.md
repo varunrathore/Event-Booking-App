@@ -38,6 +38,7 @@ php artisan serve
 The application will be available at http://127.0.0.1:8000.
 
 Running Tests
+step 1 - Change db credentials for testing with event_testing_db.
 Run feature and unit tests using:
 php artisan test
 
